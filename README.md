@@ -13,7 +13,10 @@ cp ii /usr/bin
 ```
 
 ## start ii
-ii -s ptservidor.ptnet.org  -n nickname -f "i am a bot but i will reply" & 
+ii -s ptservidor.ptnet.org  -n nickname -f "i am a bot but i will reply" &
+
+ii -s ptservidor.ptnet.org  -n nickname -f "i am a bot but i will reply" 1>output.log 2>debug.log &
+
 
 ### join a #channel
 echo "/j #archlinux" >  ~/irc/ptservidor.ptnet.org/in
